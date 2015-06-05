@@ -1,5 +1,6 @@
 package siksco.kr.co.androidapptest;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,6 +21,8 @@ public class SectionLayoutMainActivity extends ActionBarActivity {
 
     public void openExmLinearLayout(View v){
         Log.i(TAG, "open SectionLayoutMainActivity");
+        Intent intent = new Intent(SectionLayoutMainActivity.this, LinearLayoutActivity.class);
+        startActivity(intent);
     }
 
     @Override
